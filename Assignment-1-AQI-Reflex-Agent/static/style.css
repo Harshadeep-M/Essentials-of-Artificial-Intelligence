@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+    padding: 30px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #666;
+    font-size: 17px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.input-group input {
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #222;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.results {
+    margin-top: 30px;
+}
+
+.aqi-card {
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.aqi-number {
+    font-size: 65px;
+    font-weight: bold;
+}
+
+.aqi-category {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.dominant {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+.sub-index-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.sub-index {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prediction-card {
+    text-align: center;
+}
+
+.prediction-value {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.prediction-category {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.prediction-card p {
+    margin-top: 20px;
+    color: #666;
+}
+
+
+/* AQI Category Colors */
+
+.good {
+    background: #b7e4c7;
+    color: #1b4332;
+}
+
+.satisfactory {
+    background: #d9ed92;
+    color: #386641;
+}
+
+.moderately-polluted {
+    background: #ffd166;
+    color: #7a4e00;
+}
+
+.poor {
+    background: #ff9f9f;
+    color: #8b0000;
+}
+
+.very-poor {
+    background: #d8b4fe;
+    color: #581c87;
+}
+
+.severe {
+    background: #8b0000;
+    color: white;
+}
+
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sub-index-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+}

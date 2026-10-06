@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AQI Reflex Agent</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>AQI Reflex Agent</h1>
+        <p>Air Quality Monitoring & Rule-Based Prediction</p>
+    </header>
+
+    <form method="POST">
+
+        <section class="card">
+            <h2>Pollutant Data</h2>
+
+            <div class="grid">
+
+                <div class="input-group">
+                    <label>PM2.5 (µg/m³)</label>
+                    <input type="number" name="pm25" min="0" step="0.1" value="42" required>
+                </div>
+
+                <div class="input-group">
+                    <label>PM10 (µg/m³)</label>
+                    <input type="number" name="pm10" min="0" step="0.1" value="78" required>
+                </div>
+
+                <div class="input-group">
+                    <label>NO₂ (µg/m³)</label>
+                    <input type="number" name="no2" min="0" step="0.1" value="25" required>
+                </div>
+
+                <div class="input-group">
+                    <label>SO₂ (µg/m³)</label>
+                    <input type="number" name="so2" min="0" step="0.1" value="12" required>
+                </div>
+
+                <div class="input-group">
+                    <label>CO (mg/m³)</label>
+                    <input type="number" name="co" min="0" step="0.1" value="0.8" required>
+                </div>
+
+                <div class="input-group">
+                    <label>O₃ (µg/m³)</label>
+                    <input type="number" name="o3" min="0" step="0.1" value="35" required>
+                </div>
+
+                <div class="input-group">
+                    <label>NH₃ (µg/m³)</label>
+                    <input type="number" name="nh3" min="0" step="0.1" value="10" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Pb (µg/m³)</label>
+                    <input type="number" name="pb" min="0" step="0.1" value="0.2" required>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="card">
+            <h2>Environmental Data</h2>
+
+            <div class="grid">
+
+                <div class="input-group">
+                    <label>Temperature (°C)</label>
+                    <input type="number" name="temperature" step="0.1" value="32" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Air Density (kg/m³)</label>
+                    <input type="number" name="air_density" min="0" step="0.01" value="1.2" required>
+                </div>
+
+            </div>
+
+            <button type="submit">Calculate AQI</button>
+        </section>
+
+    </form>
+
+
+    {% if result %}
+
+    <section class="results">
+
+        <h2>Current Air Quality</h2>
+
+        <div class="aqi-card {{ result.category_class }}">
+            <div class="aqi-number">{{ result.aqi }}</div>
+            <div class="aqi-category">{{ result.category }}</div>
+        </div>
+
+        <p class="dominant">
+            Dominant Pollutant:
+            <strong>{{ result.dominant_pollutant }}</strong>
+        </p>
+
+
+        <div class="card">
+            <h2>Pollutant Sub-Indices</h2>
+
+            <div class="sub-index-grid">
+
+                {% for pollutant, value in result.sub_indices.items() %}
+
+                <div class="sub-index">
+                    <span>{{ pollutant }}</span>
+                    <strong>{{ value }}</strong>
+                </div>
+
+                {% endfor %}
+
+            </div>
+        </div>
+
+
+        <div class="card prediction-card">
+
+            <h2>Tomorrow's Prediction</h2>
+
+            <div class="prediction-value">
+                {{ result.predicted_aqi }}
+            </div>
+
+            <div class="prediction-category {{ result.predicted_category_class }}">
+                {{ result.predicted_category }}
+            </div>
+
+           
+
+        </div>
+
+    </section>
+
+    {% endif %}
+
+</div>
+
+</body>
+</html>
