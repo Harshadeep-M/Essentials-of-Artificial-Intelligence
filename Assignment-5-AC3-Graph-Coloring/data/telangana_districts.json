@@ -1,0 +1,247 @@
+{
+  "districts": [
+    "Adilabad",
+    "Bhadradri Kothagudem",
+    "Hanumakonda",
+    "Hyderabad",
+    "Jagtial",
+    "Jangaon",
+    "Jayashankar Bhupalpally",
+    "Jogulamba Gadwal",
+    "Kamareddy",
+    "Karimnagar",
+    "Khammam",
+    "Kumuram Bheem",
+    "Mahabubabad",
+    "Mahabubnagar",
+    "Mancherial",
+    "Medak",
+    "Medchal-Malkajgiri",
+    "Mulugu",
+    "Nagarkurnool",
+    "Nalgonda",
+    "Narayanpet",
+    "Nirmal",
+    "Nizamabad",
+    "Peddapalli",
+    "Rajanna Sircilla",
+    "Rangareddy",
+    "Sangareddy",
+    "Siddipet",
+    "Suryapet",
+    "Vikarabad",
+    "Wanaparthy",
+    "Warangal",
+    "Yadadri Bhuvanagiri"
+  ],
+  "colors": [1, 2, 3, 4],
+  "adjacency": {
+    "Adilabad": [
+      "Kumuram Bheem",
+      "Nirmal"
+    ],
+    "Bhadradri Kothagudem": [
+      "Khammam",
+      "Mahabubabad",
+      "Mulugu"
+    ],
+    "Hanumakonda": [
+      "Jangaon",
+      "Jayashankar Bhupalpally",
+      "Mulugu",
+      "Warangal"
+    ],
+    "Hyderabad": [
+      "Medchal-Malkajgiri",
+      "Rangareddy"
+    ],
+    "Jagtial": [
+      "Karimnagar",
+      "Mancherial",
+      "Nirmal",
+      "Peddapalli",
+      "Rajanna Sircilla"
+    ],
+    "Jangaon": [
+      "Hanumakonda",
+      "Mahabubabad",
+      "Siddipet",
+      "Suryapet",
+      "Warangal",
+      "Yadadri Bhuvanagiri"
+    ],
+    "Jayashankar Bhupalpally": [
+      "Bhadradri Kothagudem",
+      "Hanumakonda",
+      "Mahabubabad",
+      "Mulugu",
+      "Peddapalli"
+    ],
+    "Jogulamba Gadwal": [
+      "Mahabubnagar",
+      "Nagarkurnool",
+      "Wanaparthy"
+    ],
+    "Kamareddy": [
+      "Medak",
+      "Nirmal",
+      "Nizamabad",
+      "Sangareddy",
+      "Siddipet"
+    ],
+    "Karimnagar": [
+      "Jagtial",
+      "Peddapalli",
+      "Rajanna Sircilla",
+      "Siddipet"
+    ],
+    "Khammam": [
+      "Bhadradri Kothagudem",
+      "Mahabubabad",
+      "Nalgonda",
+      "Suryapet"
+    ],
+    "Kumuram Bheem": [
+      "Adilabad",
+      "Mancherial",
+      "Nirmal"
+    ],
+    "Mahabubabad": [
+      "Bhadradri Kothagudem",
+      "Jangaon",
+      "Jayashankar Bhupalpally",
+      "Khammam",
+      "Mulugu",
+      "Warangal"
+    ],
+    "Mahabubnagar": [
+      "Jogulamba Gadwal",
+      "Nagarkurnool",
+      "Narayanpet",
+      "Rangareddy",
+      "Wanaparthy"
+    ],
+    "Mancherial": [
+      "Jagtial",
+      "Kumuram Bheem",
+      "Nirmal",
+      "Peddapalli"
+    ],
+    "Medak": [
+      "Kamareddy",
+      "Sangareddy",
+      "Siddipet"
+    ],
+    "Medchal-Malkajgiri": [
+      "Hyderabad",
+      "Medak",
+      "Sangareddy",
+      "Siddipet",
+      "Yadadri Bhuvanagiri"
+    ],
+    "Mulugu": [
+      "Bhadradri Kothagudem",
+      "Hanumakonda",
+      "Jayashankar Bhupalpally",
+      "Mahabubabad",
+      "Warangal"
+    ],
+    "Nagarkurnool": [
+      "Jogulamba Gadwal",
+      "Mahabubnagar",
+      "Nalgonda",
+      "Rangareddy",
+      "Wanaparthy"
+    ],
+    "Nalgonda": [
+      "Khammam",
+      "Nagarkurnool",
+      "Suryapet",
+      "Yadadri Bhuvanagiri"
+    ],
+    "Narayanpet": [
+      "Mahabubnagar",
+      "Vikarabad"
+    ],
+    "Nirmal": [
+      "Adilabad",
+      "Jagtial",
+      "Kamareddy",
+      "Kumuram Bheem",
+      "Mancherial",
+      "Nizamabad"
+    ],
+    "Nizamabad": [
+      "Kamareddy",
+      "Nirmal"
+    ],
+    "Peddapalli": [
+      "Jagtial",
+      "Jayashankar Bhupalpally",
+      "Karimnagar",
+      "Mancherial",
+      "Rajanna Sircilla"
+    ],
+    "Rajanna Sircilla": [
+      "Jagtial",
+      "Karimnagar",
+      "Peddapalli",
+      "Siddipet"
+    ],
+    "Rangareddy": [
+      "Hyderabad",
+      "Mahabubnagar",
+      "Nagarkurnool",
+      "Sangareddy",
+      "Vikarabad",
+      "Yadadri Bhuvanagiri"
+    ],
+    "Sangareddy": [
+      "Kamareddy",
+      "Medak",
+      "Medchal-Malkajgiri",
+      "Rangareddy",
+      "Vikarabad"
+    ],
+    "Siddipet": [
+      "Jangaon",
+      "Kamareddy",
+      "Karimnagar",
+      "Medak",
+      "Medchal-Malkajgiri",
+      "Rajanna Sircilla",
+      "Yadadri Bhuvanagiri"
+    ],
+    "Suryapet": [
+      "Jangaon",
+      "Khammam",
+      "Nalgonda",
+      "Yadadri Bhuvanagiri"
+    ],
+    "Vikarabad": [
+      "Mahabubnagar",
+      "Narayanpet",
+      "Rangareddy",
+      "Sangareddy"
+    ],
+    "Wanaparthy": [
+      "Jogulamba Gadwal",
+      "Mahabubnagar",
+      "Nagarkurnool"
+    ],
+    "Warangal": [
+      "Hanumakonda",
+      "Jangaon",
+      "Mahabubabad",
+      "Mulugu"
+    ],
+    "Yadadri Bhuvanagiri": [
+      "Jangaon",
+      "Medchal-Malkajgiri",
+      "Nalgonda",
+      "Rangareddy",
+      "Siddipet",
+      "Suryapet"
+    ]
+  }
+}
